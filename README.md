@@ -16,12 +16,43 @@ A powerful pure UIKit framework for rendering Markdown documents with real-time 
 
 ## Installation
 
+### Swift Package Manager
+
 Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
     .package(url: "https://github.com/Lakr233/MarkdownView", from: "3.4.0"),
 ]
+```
+
+### CocoaPods
+
+Add the following to your `Podfile`:
+
+```ruby
+pod 'MarkdownView'
+```
+
+Or if you want to use specific subspecs:
+
+```ruby
+# Use only the core functionality
+pod 'MarkdownView/Core'
+
+# Use only the MarkdownView component
+pod 'MarkdownView/MarkdownView'
+
+# Use only the MarkdownParser component
+pod 'MarkdownView/MarkdownParser'
+
+# Use only the Litext text layout engine
+pod 'MarkdownView/Litext'
+```
+
+Then run:
+```bash
+pod install
 ```
 
 Platform compatibility:
